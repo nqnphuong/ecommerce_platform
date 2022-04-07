@@ -7,32 +7,38 @@ class product:
         self.unit = unit
         self.price = price
         
-    def getcorderID(self):
+    def getproductID(self):
         return self.orderID
     
-    def setorderID(self, orderID):
-        self.orderID = orderID
+    def setproductID(self, productID):
+        self.productID = productID
     
-    def getcustomerID(self):
-        return self.customerID
+    def getproductName(self):
+        return self.productName
     
-    def setcustomerID(self, customerID):
-        self.customerID = customerID
+    def setproductName(self, productName):
+        self.productName = productName
         
-    def getemployeeID(self):
-        return self.employeeID
+    def getsupplierID(self):
+        return self.supplierID
     
-    def setemployeeID(self, employeeID):
-        self.employeeID = employeeID
+    def setsupplierID(self, supplierID):
+        self.supplierID = supplierID
         
-    def getorderDate(self):
-        return self.orderDate
+    def getcategoryID(self):
+        return self.categoryID
     
-    def setorderDate(self, orderDate):
-        self.orderDate = orderDate
+    def setcategoryID(self, categoryID):
+        self.categoryID = categoryID
         
-    def getshipperID(self):
-        return self.shipperID
+    def getunit(self):
+        return self.unit
     
-    def setshipperID(self, shipperID):
-        self.shipperID = shipperID
+    def setunit(self, unit):
+        self.unit = unit
+        
+    def getprice(self):
+        return self.price
+    
+    def setprice(self, price):
+        self.price = price
