@@ -7,38 +7,38 @@ class employee:
         self.photo = photo
         self.notes = notes
 
-    def getemployeeID(self):
+    def getEmployeeID(self):
         return self.employeeID
-    
-    def setemployeeID(self, employeeID):
+
+    def setEmployeeID(self, employeeID):
         self.employeeID = employeeID
-        
-    def getlastName(self):
+
+    def getLastName(self):
         return self.lastName
-    
-    def setlastName(self, lastName):
+
+    def setLastName(self, lastName):
         self.lastName = lastName
-    
-    def getfirstName(self):
+
+    def getFirstName(self):
         return self.firstName
-    
-    def setfirstName(self, firstName):
+
+    def setFirstName(self, firstName):
         self.firstName = firstName
-        
-    def getbirthDate(self):
+
+    def getBirthDate(self):
         return self.birthDate
-    
-    def setbirthDate(self, birthDate):
+
+    def setBirthDate(self, birthDate):
         self.birthDate = birthDate
-        
-    def getphoto(self):
+
+    def getPhoto(self):
         return self.photo
-    
-    def setphoto(self, photo):
+
+    def setPhoto(self, photo):
         self.photo = photo
 
-    def getnotes(self):
+    def getNotes(self):
         return self.notes
-    
-    def setnotes(self, notes):
+
+    def setNotes(self, notes):
         self.notes = notes

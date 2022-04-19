@@ -6,32 +6,32 @@ class order:
         self.orderDate = orderDate
         self.shipperID = shipperID
         
-    def getcorderID(self):
+    def getOrderID(self):
         return self.orderID
     
-    def setorderID(self, orderID):
+    def setOrderID(self, orderID):
         self.orderID = orderID
     
-    def getcustomerID(self):
+    def getCustomerID(self):
         return self.customerID
     
-    def setcustomerID(self, customerID):
+    def setCustomerID(self, customerID):
         self.customerID = customerID
         
-    def getemployeeID(self):
+    def getEmployeeID(self):
         return self.employeeID
     
-    def setemployeeID(self, employeeID):
+    def setEmployeeID(self, employeeID):
         self.employeeID = employeeID
         
-    def getorderDate(self):
+    def getOrderDate(self):
         return self.orderDate
     
-    def setorderDate(self, orderDate):
+    def setOrderDate(self, orderDate):
         self.orderDate = orderDate
         
-    def getshipperID(self):
+    def getShipperID(self):
         return self.shipperID
     
-    def setshipperID(self, shipperID):
+    def setShipperID(self, shipperID):
         self.shipperID = shipperID

@@ -10,52 +10,52 @@ class supplier:
         self.phone = phone
         
     
-    def getsupplierID(self):
+    def getSupplierID(self):
         return self.supplierID
     
-    def supplierID(self, supplierID):
+    def setSupplierID(self, supplierID):
         self.supplierID = supplierID
         
-    def getsupplierName(self):
+    def getSupplierName(self):
         return self.supplierName
     
-    def setsupplierName(self, supplierName):
+    def setSupplierName(self, supplierName):
         self.supplierName = supplierName
     
-    def getcontactName(self):
+    def getContactName(self):
         return self.contactName
     
-    def setcontactName(self, contactName):
+    def setContactName(self, contactName):
         self.contactName = contactName
         
-    def getaddress(self):
+    def getAddress(self):
         return self.address
     
-    def setaddress(self, address):
+    def setAddress(self, address):
         self.address = address
         
-    def getcity(self):
+    def getCity(self):
         return self.city
     
-    def setcity(self, city):
+    def setCity(self, city):
         self.city = city
     
-    def getpostalCode(self):
+    def getPostalCode(self):
         return self.postalCode
     
-    def setpostalCode(self, postalCode):
+    def setPostalCode(self, postalCode):
         self.postalCode = postalCode
 
-    def getcountry(self):
+    def getCountry(self):
         return self.country
     
-    def setcountry(self, country):
+    def setCountry(self, country):
         self.country = country
         
-    def getphone(self):
+    def getPhone(self):
         return self.phone
     
-    def setphone(self, phone):
+    def setPhone(self, phone):
         self.phone = phone
     
         

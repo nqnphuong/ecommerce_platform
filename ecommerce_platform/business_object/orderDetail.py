@@ -5,26 +5,26 @@ class orderDetail:
         self.productID = productID
         self.quantity = quantity
         
-    def getorderDetailID(self):
+    def getOrderDetailID(self):
         return self.orderDetailID
     
-    def setorderDetailID(self, orderDetailID):
+    def setOrderDetailID(self, orderDetailID):
         self.orderDetailID = orderDetailID
         
-    def getcorderID(self):
+    def getOrderID(self):
         return self.orderID
     
-    def setorderID(self, orderID):
+    def setOrderID(self, orderID):
         self.orderID = orderID
     
-    def getproductID(self):
+    def getProductID(self):
         return self.productID
     
-    def setproductID(self, productID):
+    def setProductID(self, productID):
         self.productID = productID
         
-    def getquantity(self):
+    def getQuantity(self):
         return self.quantity
     
-    def setquantity(self, quantity):
+    def setQuantity(self, quantity):
         self.quantity = quantity

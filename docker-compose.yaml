@@ -1,0 +1,45 @@
+version: '3.5'
+ services:
+   mongodb_betest:
+     image: mongo
+     container_name: mongodb_betest
+     environment:
+       - MONGO_INITDB_ROOT_USERNAME=root
+       - MONGO_INITDB_ROOT_PASSWORD=pass123123123
+     volumes:
+       - ./mongodb-data:/data/db
+     ports:
+         - 27018:27017
+     healthcheck:
+         test: echo 'db.runCommand("ping").ok' | mongo 10.10.10.60:27017/test --quiet
+     restart: unless-stopped
+   mongo-express_betest:
+     image: mongo-express
+     container_name: mongo-express_betest
+     environment:
+       - ME_CONFIG_MONGODB_SERVER=mongodb_betest
+       - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+       - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+       - ME_CONFIG_MONGODB_ADMINPASSWORD=pass123123123
+       - ME_CONFIG_BASICAUTH_USERNAME=admin
+       - ME_CONFIG_BASICAUTH_PASSWORD=admin123123123
+     depends_on:
+       - mongodb_betest
+     ports:
+       - 8082:8081
+     healthcheck:
+       test:  wget --quiet --tries=3 --spider http://admin:admin123@10.10.10.60:8081 || exit 1
+     restart: unless-stopped
+   backend:
+     image: testbe
+     ports:
+       - 8080:5000
+     depends_on:
+       - mongodb_betest
+     environment:
+       - MONGOHOST=mongodb_betest
+       - MONGOPORT=27017
+       - MONGOUSER=root
+       - MONGOPASS=pass123123123
+       - FLASK_HOST=0.0.0.0
+       - FLASK_PORT=5000

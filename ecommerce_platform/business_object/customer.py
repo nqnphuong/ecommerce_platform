@@ -1,58 +1,66 @@
 class Customer:
-    def __init__(self, customerID, customerName, contactName, address, city, postalCode, country):
+    def __init__(self, customerID, customerEmail, password, customerName, contactName, address, city, postalCode,
+                 country):
         self.customerID = customerID
+        self.customerEmail = customerEmail
+        self.password = password
         self.customerName = customerName
         self.contactName = contactName
         self.address = address
         self.city = city
         self.postalCode = postalCode
         self.country = country
-    
-    def getcustomerID(self):
+
+    def getCustomerID(self):
         return self.customerID
-    
-    def setcustomerID(self, customerID):
+
+    def setCustomerID(self, customerID):
         self.customerID = customerID
-        
-    def getcustomerName(self):
+
+    def getCustomerEmail(self):
+        return self.customerEmail
+
+    def setCustomerEmail(self, customerEmail):
+        self.customerEmail = customerEmail
+
+    def getPassword(self):
+        return self.password
+
+    def setPassword(self, Password):
+        self.password = Password
+
+    def getCustomerName(self):
         return self.customerName
-    
-    def setcustomerName(self, customerName):
+
+    def setCustomerName(self, customerName):
         self.customerName = customerName
-    
-    def getcontactName(self):
+
+    def getContactName(self):
         return self.customerID
-    
-    def setcontactName(self, contactName):
+
+    def setContactName(self, contactName):
         self.contactName = contactName
-        
-    def getaddress(self):
+
+    def getAddress(self):
         return self.address
-    
-    def setaddress(self, address):
+
+    def setAddress(self, address):
         self.address = address
-               
-    def getaddress(self):
-        return self.address
-    
-    def setaddress(self, address):
-        self.address = address
-             
-    def getcity(self):
+
+    def getCity(self):
         return self.city
-    
-    def setcity(self, city):
+
+    def setCity(self, city):
         self.city = city
-               
-    def getpostalCode(self):
+
+    def getPostalCode(self):
         return self.postalCode
-    
-    def setpostalCode(self, postalCode):
+
+    def setPostalCode(self, postalCode):
         self.postalCode = postalCode
-        
-    def getcountry(self):
+
+    def getCountry(self):
         return self.country
-    
-    def setcountry(self, country):
+
+    def setCountry(self, country):
         self.country = country
-    

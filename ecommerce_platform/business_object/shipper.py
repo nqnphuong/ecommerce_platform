@@ -5,21 +5,21 @@ class shipper:
         self.phone = phone
 
         
-    def getcshipperID(self):
+    def getShipperID(self):
         return self.shipperID
     
-    def setshipperID(self, shipperID):
+    def setShipperID(self, shipperID):
         self.shipperID = shipperID
     
-    def getshipperName(self):
+    def getShipperName(self):
         return self.shipperName
     
-    def setshipperName(self, shipperName):
+    def setShipperName(self, shipperName):
         self.shipperName = shipperName
         
-    def getphone(self):
+    def getPhone(self):
         return self.phone
     
-    def setphone(self, phone):
+    def setPhone(self, phone):
         self.phone = phone
         
